@@ -14,3 +14,18 @@ Bloque 0 — Fundamentos del entorno profesional
 
 ## Contacto
 [Aquí pondrás tu LinkedIn cuando lo optimices]
+
+## Habilidades técnicas en desarrollo
+
+### Herramientas y entornos
+- Git y GitHub (control de versiones)
+- Visual Studio Code (entorno de desarrollo)
+- Terminal / línea de comandos
+
+### Lenguajes
+- Python (nivel básico, en progreso)
+
+### Próximamente
+- n8n (automatización)
+- APIs REST
+- SQL básico
