@@ -10,7 +10,8 @@ Hola. Soy Lekro, profesional IT en formación.
 - Ciberseguridad ética
 
 ## Progreso actual
-Bloque 0 — Fundamentos del entorno profesional
+
+Bloque 0 — En curso, sesión 3 completada
 
 ## Contacto
 [Aquí pondrás tu LinkedIn cuando lo optimices]
