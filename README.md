@@ -11,7 +11,7 @@ Hola. Soy Lekro, profesional IT en formación.
 
 ## Progreso actual
 
-Bloque 0 — En curso, sesión 3 completada
+Bloque 0 — Git consolidado (branches, merge y conflictos resueltos). Avanzando hacia VSCode avanzado.
 
 ## Contacto
 [Aquí pondrás tu LinkedIn cuando lo optimices]
