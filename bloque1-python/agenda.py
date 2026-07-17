@@ -1,3 +1,5 @@
+import json
+
 # Revisa el duplicado y añade el contacto.
 def añadir_contacto(agenda, nombre, telefono):
     """Revisa si el contacta ya existe en la agenda"""
@@ -35,9 +37,22 @@ def informe_agenda(agenda):
         for nombre, telefono in agenda.items():
             print(f"\n Contactos: {nombre} - {telefono}")
 
+def guardar_agenda(agenda):
+    with open("agenda.json", "w") as f:
+        json.dump(agenda, f)
+
+
+def cargar_agenda():
+    try:
+        with open("agenda.json", "r") as f:
+            contactos = json.load(f)
+        return contactos
+    except FileNotFoundError:
+        return {}
+
 # Programa principal.
 def main():
-    agenda = {}
+    agenda = cargar_agenda()
 
     print("=== Agenda de contactos ===")
     print("Escribe 'Salir' para cerrar la agenda.")
@@ -52,18 +67,19 @@ def main():
             nombre = input("Introduzca el nombre del contacto: ").capitalize()
             telefono = input("Introduzca el telefono del contacto: ")
             añadir_contacto(agenda, nombre, telefono)
+            guardar_agenda(agenda)
         elif control.capitalize() == "Buscar contacto":
             buscar = input("Introduzca el nombre del contacto que desee buscar: ").capitalize()
             buscar_contacto(agenda, buscar)
         elif control.capitalize() == "Eliminar contacto":
             borrar = input("Intruduzca el nombre del contacto que desea eliminar: ").capitalize()
             eliminar_contacto(agenda, borrar)
+            guardar_agenda(agenda)
         elif control.capitalize() == "Ver agenda":
             informe_agenda(agenda)
         else:
             print("Opcion inexistente, repita de nuevo.")
 
 
-main()
-        
 
+main()
